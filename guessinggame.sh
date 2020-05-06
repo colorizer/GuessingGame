@@ -3,7 +3,7 @@
 
 function guessinggame {
 
-local file_count=$( ls -l | egrep "^\-" | wc -l )
+local file_count=$( ls -A | wc -l )
 local response=''
 
 echo "How many files are here? Take a guess..."
